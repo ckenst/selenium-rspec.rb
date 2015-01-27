@@ -11,5 +11,4 @@ Both versions written by Dave Haeffner and provided by [SauceLabs](http://www.sa
 
 1. Download files
 2. Update config_cloud.rb file for SAUCE_USERNAME and SAUCE_ACCESS_KEY
-3. Run the tests in command line '''rspec -r ./config_cloud.rb
-'''
+3. Run the tests in command line ```rspec -r ./config_cloud.rb```
