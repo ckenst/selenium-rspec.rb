@@ -14,14 +14,22 @@ RSpec.configure do |config|
       
       		@driver = Selenium::WebDriver.for(
       			:remote,
-      			url: "http://#{ENV['SAUCE_USERNAME']}:#{ENV['SAUCE_ACCESS_KEY']}\ @ondemand.saucelabs.com:80/wd/hub",
+      			url: "http://#{ENV['SAUCE_USERNAME']}:#{ENV['SAUCE_ACCESS_KEY']}@ondemand.saucelabs.com:80/wd/hub",
       			desired_capabilities: caps) 
       	else
       		@driver = Selenium::WebDriver.for :firefox 
       	end
 	end
 
-	config.after(:each) do 
+	config.after(:each) do
+            if ENV['host'] == 'saucelabs'
+                  if example.exception.nil?
+                        SauceWhisk::Jobs.pass_job @driver.session_id
+                  else 
+                        SauceWhisk::Jobs.fail_job @driver.session_id
+                  end
+            end
+             
 		@driver.quit
 	end
 end
