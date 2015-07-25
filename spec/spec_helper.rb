@@ -10,7 +10,7 @@ RSpec.configure do |config|
 			caps = Selenium::WebDriver::Remote::Capabilities.send(ENV['browser'])
       		caps.version = ENV['browser_version']
       		caps.platform = ENV['operating_system']
-					caps["screenResolution"] = ENV['resolution']
+					caps["screenResolution"] = '1280x1024'
       		caps[:name] = example.metadata[:full_description]
 
       		@driver = Selenium::WebDriver.for(
@@ -18,7 +18,7 @@ RSpec.configure do |config|
       			url: "http://#{ENV['SAUCE_USERNAME']}:#{ENV['SAUCE_ACCESS_KEY']}@ondemand.saucelabs.com:80/wd/hub",
       			desired_capabilities: caps)
       	else
-      		@driver = Selenium::WebDriver.for :firefox
+      		@driver = Selenium::WebDriver.for :chrome
 					@driver.manage.window.resize_to(1280, 1024)
       	end
 	end
