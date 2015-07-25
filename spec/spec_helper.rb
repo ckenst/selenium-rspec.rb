@@ -10,7 +10,7 @@ RSpec.configure do |config|
 			caps = Selenium::WebDriver::Remote::Capabilities.send(ENV['browser'])
       		caps.version = ENV['browser_version']
       		caps.platform = ENV['operating_system']
-					caps["screenResolution"] = '1280x1024'
+					caps["screenResolution"] = ENV['resolution']
       		caps[:name] = example.metadata[:full_description]
 
       		@driver = Selenium::WebDriver.for(
