@@ -22,12 +22,11 @@ The challenge with any automation is always about how to reveal new and interest
 2. Run the tests at command line ```rspec <specname>.rb```
 
 ###To Do:
-Integrate the following demos into page objects:
-  1. Working with tables:
-    - table_sort.rb
-    - table_sort2.rb
-  2. Working with Javascript alerts:
-    - javascript_alerts.rb
-  3. Selecting from a Dropdown List
-    - dropdown.rb
-    - dropdown2.rb
+1. Abstract out tests:
+  - add spec files to /spec folder
+  - add page object files to /pages folder
+  - do this for each test
+2. Update Gemfile
+3. Add config file and configuration options for running sauce labs / locally
+4. Add spec_helper?
+5. 
