@@ -10,6 +10,8 @@ class Login
 	def initialize(driver)
 		@driver = driver
 		@driver.get 'http://the-internet.herokuapp.com/login'
+		raise 'Login page not ready' unless
+			@driver.find_element(LOGIN_FORM).displayed?
 	end
 
 	def with(username, password)
