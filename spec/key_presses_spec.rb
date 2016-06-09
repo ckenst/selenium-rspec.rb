@@ -1,7 +1,6 @@
-#Key presses can be used to interact with a website. This presses a key and then verifies it was inputted. 
+#Key presses can be used to interact with a website. This presses a key and then verifies it was inputted.
 
 require_relative '../pages/key_press'
-require 'rspec/expectations'
 
 describe 'Key Press is' do
 
