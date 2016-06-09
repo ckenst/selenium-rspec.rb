@@ -1,9 +1,8 @@
-# filename: dynamic_loading.rb
+require 'selenium-webdriver'
 
 class DynamicLoading
 	START_BUTTON  = { css: '#start button' }
-  	
-  	FINISH_TEXT   = { id: 'finish' }
+  FINISH_TEXT   = { id: 'finish' }
 
 	def initialize(driver)
 		@driver = driver
@@ -13,7 +12,7 @@ class DynamicLoading
 		@driver.get "http://the-internet.herokuapp.com/dynamic_loading/#{example_number}"
 	end
 
-	def start 
+	def start
 		@driver.find_element(START_BUTTON).click
 	end
 
@@ -21,7 +20,7 @@ class DynamicLoading
 		wait_for { is_displayed? FINISH_TEXT }
 	end
 
-	def is_displayed?(locator) 
+	def is_displayed?(locator)
 		@driver.find_element(locator).displayed?
 	end
 
