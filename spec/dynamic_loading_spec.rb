@@ -1,4 +1,4 @@
-# Showing how to do an implicit wait for dynamic loading page
+# Showing how to do an implicit wait for dynamic loading page. Shows 2 tests
 
 require_relative '../pages/dynamic_loading'
 require_relative 'spec_helper'
