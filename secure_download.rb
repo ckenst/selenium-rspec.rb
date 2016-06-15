@@ -1,4 +1,5 @@
-#secure_download.rb
+#description
+#create a new secure file download spec
 
 require 'selenium-webdriver'
 require 'rspec/expectations'
