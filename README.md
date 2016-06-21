@@ -24,9 +24,6 @@ _The challenge (and fun) with any automation is always about how to reveal new a
 ---
 
 ###To Do:
-0. Update current tests in ```/spec``` folder. Update deprecated syntax
-1. Abstract out tests:
-  - add spec files to /spec folder
-  - add page object files to /pages folder
-  - do this for each test
-3. Add config file and configuration options for running sauce labs / locally -> In Progress
+1. Move more of the tests into page objects
+  - Create a base page object as necessary
+2. Add config file and configuration options for running sauce labs / locally -> In Progress
