@@ -18,6 +18,9 @@ def run
 	teardown
 end
 
+# This reads in the heading text of the page, determines if it is a variant or control, 
+# sets a cookie to opt out entirely and then refreshes the page to see if that opt-out works
+
 run do
 	@driver.get 'http://the-internet.herokuapp.com/abtest'
 	heading_text = @driver.find_element(css: 'h3').text
