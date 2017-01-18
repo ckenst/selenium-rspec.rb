@@ -2,11 +2,16 @@
 
 ###About:
 
-These examples are for building GUI acceptance tests using Selenium WebDriver (Selenium) in Ruby using an open source BDD framework called [RSpec](http://rspec.info/).
+These examples are for building GUI acceptance tests using Selenium WebDriver (Selenium) in Ruby using an open source BDD framework called [RSpec](http://rspec.info/). (Sometimes these GUI tests are called integration tests or end to end tests.)
 
-Many of these test ideas come from the [Elemental Selenium](http://elementalselenium.com/) tips site and elsewhere on the web as separate bits of example code. I'm taking the time to refactor them all into a single test suite because it presents a cleaner and more realistic view of how you might structure a similar test suite.
+Many of these test ideas come from the [Elemental Selenium](http://elementalselenium.com/) tips site and elsewhere on the web as separate bits of example code. Then they get refactored into a single test suite with separate page objects as it presents a cleaner and more realistic view of how you might structure a similar test suite.
 
 _The challenge (and fun) with any automation is always about how to reveal new and interesting information through tests in a computer aided fashion._
+
+##To Install:
+
+1. Download or clone the repo
+2. Run `bundle install` to install all of the required gems
 
 ###To run Locally:
 
