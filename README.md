@@ -31,4 +31,7 @@ _The challenge (and fun) with any automation is always about how to reveal new a
 ###To Do:
 1. Move more of the tests into page objects
   - Create a base page object as necessary
-2. Add config file and configuration options for running sauce labs / locally -> In Progress
+2. Add config file and configuration options for running sauce labs / locally
+3. Add Vendor files for storing ChromeDriver and GeckoDriver.
+  - Add paths to spec_helper.
+4. Create a rakefile
