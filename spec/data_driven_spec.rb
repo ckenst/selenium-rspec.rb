@@ -1,13 +1,14 @@
 #this is an example of a data-driven test and uses data/user_data.csv
 #from Elemental Selenium Tip #19: http://elementalselenium.com/tips/19-data-driven-testing
 
+require_relative 'spec_helper'
 require_relative '../pages/data_driven'
 require 'csv'
 
 describe 'Login with users' do
 
   before(:each) do
-    @driver       = Selenium::WebDriver.for :firefox
+    @driver       = Selenium::WebDriver.for :chrome
     @data_driven  = DataDriven.new(@driver)
   end
 
