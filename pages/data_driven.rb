@@ -1,14 +1,11 @@
-require 'selenium-webdriver'
+require_relative 'base_page'
 
-class DataDriven
+class DataDriven < BasePage
+    FLASH_MESSAGE     = {class: 'flash' }
 
   def initialize(driver)
-    @driver = driver
+    super
     @driver.get 'http://the-internet.herokuapp.com/login'
-  end
-
-  def wait_for(timeout = 15)
-  	Selenium::WebDriver::Wait.new(:timeout => timeout).until { yield }
   end
 
   def user_data
@@ -19,7 +16,7 @@ class DataDriven
   end
 
   def notification_text
-    wait_for(5) { @driver.find_element(class: 'flash').displayed? }
-    @driver.find_element(class: 'flash').text.delete('^a-zA-z !.')
+    wait_for(5) { is_displayed? FLASH_MESSAGE }
+    find(FLASH_MESSAGE).text.delete('^a-zA-z !.')
   end
 end

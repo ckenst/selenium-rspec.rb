@@ -16,4 +16,16 @@ class BasePage
   def click(locator)
     find(locator).click
   end
+
+  def wait_for(timeout = 15)
+    Selenium::WebDriver::Wait.new(:timeout => timeout).until { yield }
+  end
+
+  def is_displayed?(locator)
+    begin
+      find(locator).displayed?
+    rescue Selenium::WebDriver::Error::NoSuchElementError
+      false
+    end
+  end
 end
