@@ -1,1 +1,1 @@
-ENV['browser']  ||= 'firefox'
+ENV['browser']  ||= 'chrome'
