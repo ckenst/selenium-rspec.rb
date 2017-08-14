@@ -1,12 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    childprocess (0.6.1)
+    childprocess (0.7.1)
       ffi (~> 1.0, >= 1.0.11)
     diff-lcs (1.2.5)
     domain_name (0.5.20160216)
       unf (>= 0.0.5, < 1.0.0)
-    ffi (1.9.17)
+    ffi (1.9.18)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     json (1.8.3)
@@ -29,18 +29,16 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
-    rubyzip (1.2.0)
+    rubyzip (1.2.1)
     sauce_whisk (0.0.21)
       json (~> 1.8.1)
       rest-client (~> 1.8.0)
-    selenium-webdriver (3.0.5)
+    selenium-webdriver (3.5.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
-      websocket (~> 1.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
-    websocket (1.2.3)
 
 PLATFORMS
   ruby
@@ -48,7 +46,7 @@ PLATFORMS
 DEPENDENCIES
   rspec (~> 3.4.0)
   sauce_whisk (~> 0.0.21)
-  selenium-webdriver (~> 3.0.5)
+  selenium-webdriver (~> 3.5)
 
 BUNDLED WITH
-   1.13.7
+   1.14.4
