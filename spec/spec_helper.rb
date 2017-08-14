@@ -23,8 +23,8 @@ RSpec.configure do |config|
       when 'chrome'
         chromedriver = File.join(Dir.pwd, 'vendor', 'chromedriver')
         @driver = Selenium::WebDriver.for :chrome, driver_path: chromedriver
-      end
-  	end
+			end
+		end
 	end
 
 	config.after(:each) do |example|
@@ -39,6 +39,6 @@ RSpec.configure do |config|
       end
     ensure
       @driver.quit
-    end
+		end
 	end
 end
