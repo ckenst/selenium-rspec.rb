@@ -25,13 +25,3 @@ _The challenge (and fun) with any automation is always about how to reveal new a
   - SAUCE_USERNAME
   - SAUCE_ACCESS_KEY
 2. Run the tests at command line ```rspec -r ./config_cloud.rb```
-
----
-
-### To Do:
-2. Add config file and configuration options for running sauce labs / locally
-4. Create a rakefile
-   - I think this is done but tests need to reference it
-5. Add a headless chrome example
-6. Refactor tests to start referencing base page object methods
-   - Remove references to initialize method
