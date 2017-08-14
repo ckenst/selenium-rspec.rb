@@ -1,16 +1,12 @@
 #description
 
 require_relative '../pages/table_sort'
+require_relative 'spec_helper'
 
 describe 'Sorting a list' do
 
   before(:each) do
-    @driver = Selenium::WebDriver.for :firefox
     @table_sort = TableSort.new(@driver)
-  end
-
-  after(:each) do
-    @driver.quit
   end
 
   it 'one way' do

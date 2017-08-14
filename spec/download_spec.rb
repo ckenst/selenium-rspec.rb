@@ -1,17 +1,13 @@
 #downloading a file without a browser
 
 require_relative '../pages/download'
+require_relative 'spec_helper'
 require 'rest-client'
 
 describe 'Download File' do
 
   before(:each) do
-    @driver = Selenium::WebDriver.for :firefox
     @download = DropDown.new(@driver)
-  end
-
-  after(:each) do
-    @driver.quit
   end
 
   it 'works' do

@@ -1,18 +1,13 @@
 #Logging into The Internet app both successfully and un-successfully. Asserting it worked
 
 require_relative '../pages/login'
-#require_relative 'spec_helper'
+require_relative 'spec_helper'
 
 describe 'Login' do
 
 	before(:each) do
-    @driver = Selenium::WebDriver.for :chrome
 		@login = Login.new(@driver)
 	end
-
-	after(:each) do
-    @driver.quit
-  end
 
 	it 'succeeded' do
 		@login.with('tomsmith', 'SuperSecretPassword!')

@@ -1,15 +1,11 @@
 #description
 require_relative '../pages/javascript'
+require_relative 'spec_helper'
 
 describe 'JavaScript Alerts' do
 
   before(:each) do
-    @driver = Selenium::WebDriver.for :firefox
     @javascript = JavaScript.new(@driver)
-  end
-
-  after(:each) do
-    @driver.quit
   end
 
   it 'dismissed' do

@@ -1,16 +1,12 @@
 #Two slightly different ways to select from a dropdown list
 
 require_relative '../pages/dropdown'
+require_relative 'spec_helper'
 
 describe 'Dropdown' do
 
   before(:each) do
-    @driver = Selenium::WebDriver.for :firefox
     @dropdown = DropDown.new(@driver)
-  end
-
-  after(:each) do
-    @driver.quit
   end
 
   it 'selected one way' do #both of these need heavy refactoring
