@@ -11,7 +11,6 @@ describe 'Sorting a list' do
 
   it 'one way' do
     @driver.get 'http://the-internet.herokuapp.com/tables'
-
     @driver.find_element(css: '#table1 thead tr th:nth-of-type(4)').click #click the column header to sort
 
     dues = @driver.find_elements(css: '#table1 tbody tr td:nth-of-type(4)')
@@ -22,7 +21,6 @@ describe 'Sorting a list' do
 
   it 'second way' do
     @driver.get 'http://the-internet.herokuapp.com/tables'
-
     @driver.find_element(css: '#table2 thead .dues').click #click the column header to sort
 
     dues = @driver.find_elements(css: '#table2 thead .dues') #the table header dues now has a class of it's own
