@@ -21,7 +21,7 @@ def run
 end
 
 run do
-  @driver.get 'http://the-internet.herokuapp.com'
-  expect(@driver.title).to eql 'The Internet'
+  @driver.get 'http://www.kenst.com/about'
+  expect(@driver.title).to eql "About – Chris Kenst's Blog"
   @driver.save_screenshot(File.join(Dir.pwd, "internet-main-page.png"))
 end
