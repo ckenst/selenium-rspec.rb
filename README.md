@@ -15,8 +15,14 @@ _The challenge (and fun) with any automation is always about how to reveal new a
 
 ### To run Locally:
 
+Run tests individually:
+
 1. Switch to the /spec/ folder
 2. Run the tests at command line ```rspec <specname>.rb```
+
+Run tests in parallel:
+
+1. Run tests at the command line ```rake local:chrome``` or ```rake local:firefox```
 
 ### To run Remotely:
 (Must have a SauceLabs account:)
@@ -25,3 +31,5 @@ _The challenge (and fun) with any automation is always about how to reveal new a
   - SAUCE_USERNAME
   - SAUCE_ACCESS_KEY
 2. Run the tests at command line ```rspec -r ./config_cloud.rb```
+or
+3. Run the tests in parallel at the command line ```rake cloud:<browser[options]>```

@@ -4,7 +4,11 @@ def launch_with(config_filename)
   else
     test_options = "-r ./config/#{config_filename} --order random"
   end
-  system("parallel_rspec --test-options '#{test_options}' spec")
+  if ENV['slow']
+    system("rspec #{test_options}")
+  else
+    system("parallel_rspec -n 4 --test-options '#{test_options}' spec") # limiting to 4 parallel tests at once
+  end
 end
 
 namespace :local do
