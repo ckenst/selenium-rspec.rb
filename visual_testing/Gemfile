@@ -1,6 +1,0 @@
-source 'https://rubygems.org'
-
-gem 'selenium-webdriver', '~> 3.5.0'
-gem 'eyes_selenium', '~> 3.10.0'
-gem 'rspec', '~> 3.5.0'
-gem 'rake', '~> 10.4.2'
