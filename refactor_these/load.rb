@@ -1,5 +1,4 @@
 #Use BrowserMob Proxy to generate a good amount of load
-
 #require_relative ''
 
 require 'selenium-webdriver'

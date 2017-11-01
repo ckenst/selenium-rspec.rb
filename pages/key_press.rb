@@ -1,7 +1,6 @@
 require 'selenium-webdriver'
 
 class KeyPress
-
   def initialize(driver)
     @driver = driver
     @driver.get 'http://the-internet.herokuapp.com/key_presses'

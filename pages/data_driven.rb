@@ -1,7 +1,7 @@
 require_relative 'base_page'
 
 class DataDriven < BasePage
-    FLASH_MESSAGE     = {class: 'flash' }
+  FLASH_MESSAGE     = {class: 'flash' }
 
   def initialize(driver)
     super
