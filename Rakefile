@@ -22,15 +22,16 @@ namespace :local do
   end
 end
 
-namespace :cloud do
-  BROWSERS_CLOUD =  [ 'firefox', 'chrome', 'internet_explorer']
-  BROWSERS_CLOUD.each do |browser|
-    desc "Run tests in Sauce Labs on #{browser.capitalize}"
-    task browser.to_sym, :version, :os do |t, args|
-      ENV['browser'] = browser
-      ENV['browser_version']  = args[:version]
-      ENV['operating_system'] = args[:os]
-      launch_with('cloud.rb')
-    end
-  end
+# This isn't set up yet
+# namespace :cloud do
+#   BROWSERS_CLOUD =  [ 'firefox', 'chrome', 'internet_explorer']
+#   BROWSERS_CLOUD.each do |browser|
+#     desc "Run tests in Sauce Labs on #{browser.capitalize}"
+#     task browser.to_sym, :version, :os do |t, args|
+#       ENV['browser'] = browser
+#       ENV['browser_version']  = args[:version]
+#       ENV['operating_system'] = args[:os]
+#       launch_with('cloud.rb')
+#     end
+#   end
 end
