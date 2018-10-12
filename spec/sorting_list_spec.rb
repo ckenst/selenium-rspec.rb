@@ -1,5 +1,3 @@
-#description
-
 require_relative '../pages/table_sort'
 require_relative 'spec_helper'
 

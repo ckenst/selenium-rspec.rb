@@ -1,5 +1,3 @@
-#example A/B tests
-
 require_relative '../pages/split_test'
 require_relative 'spec_helper'
 

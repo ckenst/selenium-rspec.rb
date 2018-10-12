@@ -1,5 +1,3 @@
-#description
-
 require_relative '../pages/javascript'
 require_relative 'spec_helper'
 
