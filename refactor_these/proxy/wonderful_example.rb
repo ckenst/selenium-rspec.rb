@@ -4,7 +4,7 @@ include RSpec::Matchers
 
 def setup
   caps    = Selenium::WebDriver::Remote::Capabilities.send("chrome")
-  @driver = Selenium::WebDriver.for(:remote, url: "http://0.0.0.0:32768/wd/hub", desired_capabilities: caps)
+  @driver = Selenium::WebDriver.for(:remote, url: "http://0.0.0.0:4444/wd/hub", desired_capabilities: caps)
 
   # client = Selenium::WebDriver::Remote::Http::Default.new
   # client.proxy = Selenium::Proxy.new(http: "brussels.wonderproxy.com")
@@ -27,5 +27,5 @@ end
 run do
   @driver.get 'https://wondernetwork.com/geotest'
   expect(@driver.title).to eql "Geotest - WonderNetwork"
-  # @driver.save_screenshot('docker_image.png')
+  @driver.save_screenshot('geotest.png')
 end
