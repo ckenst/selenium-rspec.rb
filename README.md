@@ -33,3 +33,8 @@ Run tests in parallel:
 2. Run the tests at command line ```rspec -r ./config_cloud.rb```
 or
 3. Run the tests in parallel at the command line ```rake cloud:<browser[options]>```
+
+## Other Examples
+
+- Running Headless Chrome. Code: https://gist.github.com/ckenst/c1e7f32f290312adfeec46a93d283ac0
+-
