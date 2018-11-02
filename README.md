@@ -34,7 +34,9 @@ Run tests in parallel:
 or
 3. Run the tests in parallel at the command line ```rake cloud:<browser[options]>```
 
-## Other Examples
+## Other Selenium Examples
+
+References to other code I've created:
 
 - Running Headless Chrome. Code: https://gist.github.com/ckenst/c1e7f32f290312adfeec46a93d283ac0
--
+- Running Chrome in a Docker container. Code: https://gist.github.com/ckenst/38e1651793cf8955d605ac72697682da
