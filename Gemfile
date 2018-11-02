@@ -7,5 +7,5 @@ gem 'parallel_tests', '~> 2.14.3'
 gem 'dotenv-rails'
 
 # gems with known vulnerabilities
-gem 'loofah', '~> 2.2.1'
+gem 'loofah', '>= 2.2.3'
 gem 'rails-html-sanitizer', '~> 1.0.4'
