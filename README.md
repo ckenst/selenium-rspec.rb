@@ -1,4 +1,4 @@
-# Selenium Examples
+# Ruby Selenium Examples
 
 ### About:
 
@@ -8,12 +8,20 @@ Many of these test ideas come from the [Elemental Selenium](http://elementalsele
 
 _The challenge (and fun) with any automation is always about how to reveal new and interesting information through tests in a computer aided fashion._
 
-## To Install:
+## Container
+
+1. Build it ``docker build -t selenium_rspec``
+2. Run it ``docker run -ti selenium_rspec /bin/bash``
+
+Can't do much from here at this point. TBD
+
+## Installation:
 
 1. Download or clone the repo
 2. Run `bundle install` to install all of the required gems
 
-### To run Locally:
+## Running
+### Locally:
 
 Run tests individually:
 
@@ -24,7 +32,7 @@ Run tests in parallel:
 
 1. Run tests at the command line ```rake local:chrome``` or ```rake local:firefox```
 
-### To run Remotely:
+### Remotely at SauceLabs:
 (Must have a SauceLabs account:)
 
 1. Update config_cloud.rb file for
