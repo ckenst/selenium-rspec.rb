@@ -85,6 +85,7 @@ PLATFORMS
 DEPENDENCIES
   actionview (>= 5.2.2.1)
   dotenv-rails
+  nokogiri (>= 1.10.4)
   parallel_tests (~> 2.14.3)
   railties (>= 5.2.2.1)
   rspec (~> 3.4.0)

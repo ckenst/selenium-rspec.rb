@@ -7,3 +7,4 @@ gem 'dotenv-rails'
 gem "actionview", ">= 5.2.2.1"
 gem "railties", ">= 5.2.2.1"
 gem "rubyzip", ">= 1.3.0"
+gem "nokogiri", ">= 1.10.4"
